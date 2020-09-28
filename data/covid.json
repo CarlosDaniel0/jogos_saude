@@ -1,0 +1,69 @@
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "title" : "Pessoas Fumantes correm maior risco de infecção pelo novo coronavírus? ",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "O fumo além de prjudicial ao pulmão pode agravar a situação de risco de contaminação"
+            }
+        },
+        {
+            "id" : 2,
+            "title" : "Durante o período de quarentena em casa para quem está com sintomas da Covid-19 o correto é se manter em isolamento?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Teste"
+            }
+        },
+        {
+            "id" : 3,
+            "title" : "Pessoas que usam medicação para doenças pré-existentes devem interromper ou modificar seus tratamentos?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 1,
+                "note" : "Teste"
+            }
+        },
+        {
+            "id" : 4,
+            "title" : "A pessoa pode transmitir o coronavírus mesmo sem apresentar nenhum tipo de sintomas?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Teste"
+            }
+        },
+        {
+            "id" : 5,
+            "title" : "A tuberculose coloca a pessoa em um grupo de risco?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Teste"
+            }
+        }
+    ]
+}
