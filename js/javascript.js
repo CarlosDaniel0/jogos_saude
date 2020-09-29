@@ -121,34 +121,34 @@ $.fn.extend({
           
             console.log(json.length)
           $('.select').on('click', function() {
-            if (index <= json.length) {
-            modal = ''
-            if ($(this).val() == json[index-1]['correct']['feedback']) {
-              correct++
-              modal = 
-              `
-              <div class="row d-flex justify-content-center">
-                <i class="far fa-check-circle icons" id="correct"></i>
-              </div>
-              ${ json[index-1]['correct']['note'] }
-              `;
-            } else {
-              modal = 
-              `
-              <div class="row d-flex justify-content-center">
-                <i class="far fa-times-circle icons" id="false"></i>
-              </div>
-              ${ json[index-1]['correct']['note'] }
-              `;
-            }
-            index++
-            // Modal
-            $('#content').html( modal);
-            $('#modal').modal('show');
+              if (index <= json.length) {
+                if (index == json.length) $('.carousel-indicators').hide();
 
-            // Avançar
-            
-              console.log(index)
+              modal = ''
+              if ($(this).val() == json[index-1]['correct']['feedback']) {
+                correct++
+                modal = 
+                `
+                <div class="row d-flex justify-content-center">
+                  <i class="far fa-check-circle icons" id="correct"></i>
+                </div>
+                ${ json[index-1]['correct']['note'] }
+                `;
+              } else {
+                modal = 
+                `
+                <div class="row d-flex justify-content-center">
+                  <i class="far fa-times-circle icons" id="false"></i>
+                </div>
+                ${ json[index-1]['correct']['note'] }
+                `;
+              }
+              index++
+              // Modal
+              $('#content').html( modal);
+              $('#modal').modal('show');
+
+              // Avançar
               $('#next').click(function() {
                 $('#carousel').carousel('next');
                 $('#modal').modal('hide');
@@ -157,9 +157,11 @@ $.fn.extend({
                 $('#carousel').carousel('next');
                 $('#modal').modal('hide');
               });
-            } else {
-              $('.carousel-indicators').removeAttr('style');
-            }
+              $('.modal').click(function() {
+                $('#carousel').carousel('next');
+                $('#modal').modal('hide');
+              });
+            } 
           });
         
 
