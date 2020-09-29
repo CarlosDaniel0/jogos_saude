@@ -46,10 +46,22 @@ $.fn.extend({
                 </div>
                 `;
         }
+        indexes += `<li data-target="#carousel" class="not-visible"></li>`;
+        items += 
+        `
+          <div class="carousel-item">
+            <div class="item">
+              <div class="col">
+                <h2 class="title">Fim</h2>
+                
+              </div>
+            </div>
+          </div>
+        `;
 
         var pattern = 
         `
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carousel" class="carousel slide" data-touch="false" data-interval="false">
             <ol class="carousel-indicators" style="display: none">
               ${ indexes }
             </ol>
@@ -95,22 +107,21 @@ $.fn.extend({
           $('#start-button').animate({left: '-=400', opacity: '0'}, 0).delay(2000);
           $('#start-button').animate({left: '+=400', opacity: '1'}, 700);
           
-          $('#responsaveis').hide().delay(3000)
-          $('#responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow')
+          $('#responsaveis').hide().delay(3000);
+          $('#responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow');
 
 
           $('#start-button').on('click', function() {
             index++
             $('.carousel-indicators').removeAttr('style');
             $('#carousel').carousel('next');
-          })
-          
+          });
           
           //$(document).quiz();
           
             console.log(json.length)
           $('.select').on('click', function() {
-            if (index < json.length) {
+            if (index <= json.length) {
             modal = ''
             if ($(this).val() == json[index-1]['correct']['feedback']) {
               correct++
@@ -146,6 +157,8 @@ $.fn.extend({
                 $('#carousel').carousel('next');
                 $('#modal').modal('hide');
               });
+            } else {
+              $('.carousel-indicators').removeAttr('style');
             }
           });
         
