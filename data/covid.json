@@ -10,7 +10,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "O fumo além de prjudicial ao pulmão pode agravar a situação de risco de contaminação"
+                "note" : "O fumo além de prejudicial ao pulmão pode agravar a situação de risco de contaminação &#x1F354"
             }
         },
         {
@@ -23,7 +23,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste"
+                "note" : "Teste 2 &#x1F630"
             }
         },
         {
@@ -36,7 +36,7 @@
             ],
             "correct" : {
                 "feedback" : 1,
-                "note" : "Teste"
+                "note" : "Teste 3"
             }
         },
         {
@@ -49,7 +49,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste"
+                "note" : "Teste 4"
             }
         },
         {
@@ -62,7 +62,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste"
+                "note" : "Teste 5"
             }
         }
     ]
