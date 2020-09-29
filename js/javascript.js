@@ -1,6 +1,78 @@
 // Função que gerencia o quiz
 $.fn.extend({
     quiz: function(json) {
+      $(function() {
+        // Animações 
+        $('#logo').hide();
+        $('#logo').animate({height: 'toggle', opacity: '1'}, 200); 
+        $("#info").hide();
+        $("#info").animate({height: 'toggle', opacity: '1'}, 1000).delay(1000);
+
+        $('#subinfo').hide().delay(1000);
+        $('#subinfo').animate({height: 'toggle', opacity: '1'}, 'slow');
+        
+
+        $('#start-button').animate({left: '-=400', opacity: '0'}, 0).delay(2000);
+        $('#start-button').animate({left: '+=400', opacity: '1'}, 700);
+        
+        $('#responsaveis').hide().delay(3000);
+        $('#responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow');
+
+
+        $('#start-button').on('click', function() {
+          index++
+          $('.carousel-indicators').removeAttr('style');
+          $('#carousel').carousel('next');
+        });
+        
+        //$(document).quiz();
+        $('.select').on('click', function() {
+            if (index <= json.length) {
+              if (index == json.length) $('.carousel-indicators').hide();
+
+            modal = ''
+            if ($(this).val() == json[index-1]['correct']['feedback']) {
+              correct++;
+              modal = 
+              `
+              <div class="row d-flex justify-content-center">
+                <i class="far fa-check-circle icons" id="correct"></i>
+              </div>
+              ${ json[index-1]['correct']['note'] }
+              `;
+            } else {
+              modal = 
+              `
+              <div class="row d-flex justify-content-center">
+                <i class="far fa-times-circle icons" id="false"></i>
+              </div>
+              ${ json[index-1]['correct']['note'] }
+              `;
+              
+            }
+            $('#result').html(correct);
+            index++
+            // Modal
+            $('#content').html( modal);
+            $('#modal').modal('show');
+
+            // Avançar
+            $('#next').click(function() {
+              $('#carousel').carousel('next');
+              $('#modal').modal('hide');
+            });
+            $('.close').click(function() {
+              $('#carousel').carousel('next');
+              $('#modal').modal('hide');
+            });
+            $('.modal').click(function() {
+              $('#carousel').carousel('next');
+              $('#modal').modal('hide');
+            });
+          } 
+        });
+    });
+    
       console.log(json)
         var dados = json;
         var index = 0;
@@ -46,18 +118,21 @@ $.fn.extend({
                 </div>
                 `;
         }
-        indexes += `<li data-target="#carousel" class="not-visible"></li>`;
-        items += 
-        `
-          <div class="carousel-item">
-            <div class="item">
-              <div class="col">
-                <h2 class="title">Fim</h2>
-                
+        // Página de resultados
+
+          indexes += `<li data-target="#carousel" class="not-visible"></li>`;
+          items += 
+          `
+            <div class="carousel-item">
+              <div class="item">
+                <div class="col">
+                  <h2 class="title">Fim</h2>
+                  <p id="result"></p>
+                </div>
               </div>
             </div>
-          </div>
-        `;
+          `;
+
 
         var pattern = 
         `
@@ -93,99 +168,6 @@ $.fn.extend({
 
         $(this).html(pattern);
         
-        $(function() {
-          // Animações 
-          $('#logo').hide();
-          $('#logo').animate({height: 'toggle', opacity: '1'}, 200); 
-          $("#info").hide();
-          $("#info").animate({height: 'toggle', opacity: '1'}, 1000).delay(1000);
-
-          $('#subinfo').hide().delay(1000);
-          $('#subinfo').animate({height: 'toggle', opacity: '1'}, 'slow');
-          
-
-          $('#start-button').animate({left: '-=400', opacity: '0'}, 0).delay(2000);
-          $('#start-button').animate({left: '+=400', opacity: '1'}, 700);
-          
-          $('#responsaveis').hide().delay(3000);
-          $('#responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow');
-
-
-          $('#start-button').on('click', function() {
-            index++
-            $('.carousel-indicators').removeAttr('style');
-            $('#carousel').carousel('next');
-          });
-          
-          //$(document).quiz();
-          
-            console.log(json.length)
-          $('.select').on('click', function() {
-              if (index <= json.length) {
-                if (index == json.length) $('.carousel-indicators').hide();
-
-              modal = ''
-              if ($(this).val() == json[index-1]['correct']['feedback']) {
-                correct++
-                modal = 
-                `
-                <div class="row d-flex justify-content-center">
-                  <i class="far fa-check-circle icons" id="correct"></i>
-                </div>
-                ${ json[index-1]['correct']['note'] }
-                `;
-              } else {
-                modal = 
-                `
-                <div class="row d-flex justify-content-center">
-                  <i class="far fa-times-circle icons" id="false"></i>
-                </div>
-                ${ json[index-1]['correct']['note'] }
-                `;
-              }
-              index++
-              // Modal
-              $('#content').html( modal);
-              $('#modal').modal('show');
-
-              // Avançar
-              $('#next').click(function() {
-                $('#carousel').carousel('next');
-                $('#modal').modal('hide');
-              });
-              $('.close').click(function() {
-                $('#carousel').carousel('next');
-                $('#modal').modal('hide');
-              });
-              $('.modal').click(function() {
-                $('#carousel').carousel('next');
-                $('#modal').modal('hide');
-              });
-            } 
-          });
-        
-
-          
-          // $('#avancar').on('click',function() {;
-          //     if (index < 20) {
-      
-          //         // Modal
-          //         $('.modal-title').html('Teste');
-          //         $('.modal-body').html(index);
-          //         $('#modal').modal('show');
-                  
-          //         index++
-                  
-          //         $('#next').click(function() {
-          //           $('#carousel').carousel('next');
-                    
-          //           $('#modal').modal('hide');
-          //         })
-          //     }
-              //console.log(index)
-          //});
-      
-      });
     },
 });
 
