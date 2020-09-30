@@ -15,7 +15,7 @@
         },
         {
             "id" : 2,
-            "title" : "Durante o período de quarentena em casa para quem está com sintomas da Covid-19 o correto é se manter em isolamento?",
+            "title" : "Durante a quarentena quem está com sintomas da Covid-19 deve se manter em isolamento?",
             "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
@@ -54,7 +54,7 @@
         },
         {
             "id" : 5,
-            "title" : "A tuberculose coloca a pessoa em um grupo de risco?",
+            "title" : "Pessoas com tuberculose estão no grupo de risco?",
             "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
@@ -67,7 +67,7 @@
         },
         {
             "id" : 6,
-            "title" : "De maneira geral, considera-se que após 14 dias do início dos sintomas os pacientes já não transmitem mais a doença?",
+            "title" : "Após 14 dias do início dos sintomas os pacientes já não transmitem mais a doença caso não haja febre?",
             "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
@@ -93,7 +93,7 @@
         },
         {
             "id" : 8,
-            "title" : "A vacina trivalente da gripe protege ou não contra o COVID-19?",
+            "title" : "A vacina trivalente da gripe protege contra o COVID-19?",
             "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
@@ -102,6 +102,19 @@
             "correct" : {
                 "feedback" : 1,
                 "note" : "Apesar de ser utilizada para previnir vários tipos de vírus da gripe (Influenzavírus). Não existe comprovação que esse tipo de vacina previne a contaminação por Coronavírus. &#x1F489"
+            }
+        },
+        {
+            "id" : 9,
+            "title" : "Humanos podem ser contaminados por fonte animal?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 1,
+                "note" : "embora tenha haja um caso de contaminação por um cachorro em hong kong ,até o momento não há evidências de que cachorro,gato ou qualquer outro animal de estimação possa transmitir a covid-19. &#x1F436 &#x1F408"
             }
         }
     ]
