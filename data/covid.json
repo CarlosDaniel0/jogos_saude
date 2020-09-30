@@ -10,7 +10,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "O fumo além de prejudicial ao pulmão pode agravar a situação de risco de contaminação &#x1F354"
+                "note" : "O fumo além de prejudicial ao pulmão pode agravar a situação de risco de contaminação &#x1F613"
             }
         },
         {
@@ -23,7 +23,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste 2 &#x1F630"
+                "note" : "É recomendável evitar o contato com outras pessoas para evitar disseminação do vírus, mas caso necessite sair, use máscara. &#x1F637"
             }
         },
         {
@@ -36,7 +36,7 @@
             ],
             "correct" : {
                 "feedback" : 1,
-                "note" : "Teste 3"
+                "note" : "A mudança nos medicamentos devem ser consultadas com um médico de confiança. &#x1F468"
             }
         },
         {
@@ -49,7 +49,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste 4"
+                "note" : "A contaminação por pessoas assintomaticas é muito comum por causa do relaxamento da medidas de segurança. &#x1F62C"
             }
         },
         {
@@ -62,7 +62,46 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Teste 5"
+                "note" : "Doenças respirtórias estão relacionadas com maior risco em pessoas contaminadas pela Covid-19. &#x1F62C"
+            }
+        },
+        {
+            "id" : 6,
+            "title" : "De maneira geral, considera-se que após 14 dias do início dos sintomas os pacientes já não transmitem mais a doença?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Desde que estejam há pelo menos três dias sem febre (mesmo sem tomar medicamento contra febre) e tenham tido melhora significativa dos sintomas respiratórios. &#x1F912"
+            }
+        },
+        {
+            "id" : 7,
+            "title" : "Lavar as mãos com pouco sabão elimina o vírus?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "O mais importante é que as mãos sejam bem esfregadas com sabão e não a quantidade de sabão utilizada. &#x1F91D &#x1F6BF"
+            }
+        },
+        {
+            "id" : 8,
+            "title" : "A vacina trivalente da gripe protege ou não contra o COVID-19?",
+            "img" : "imagem.png",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 1,
+                "note" : "Apesar de ser utilizada para previnir vários tipos de vírus da gripe (Influenzavírus). Não existe comprovação que esse tipo de vacina previne a contaminação por Coronavírus. &#x1F489"
             }
         }
     ]
