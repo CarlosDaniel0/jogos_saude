@@ -144,7 +144,7 @@ $.fn.extend({
           <div class="item">
             <div class="col">
               <h2 id="info">E se as chances de contrair o novo coronavírus forem proporcionais ao seu conhecimento sobre ele?</h2>
-              <h3 id="subinfo">Responda a 20 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!</h3>
+              <h3 id="subinfo">Responda a 10 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!</h3>
               <div class="row d-flex justify-content-center mt-4">
                 <button class="button btn-warning avancar" id="start-button">Iniciar</button>
               </div>
