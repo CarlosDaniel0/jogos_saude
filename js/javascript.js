@@ -76,9 +76,9 @@ $.fn.extend({
               Você acertou ${ correct } de ${ json.length } (${ percent}%) das questões. 
               `;
 
-              var whatsapp = `https://api.whatsapp.com/send?text=Acertei ${ correct } questões no Quiz | Covid Monsehor - Gil. Disponível no link: link`;
-              var facebook = `https://www.facebook.com/sharer/sharer.php?u=link`;
-              var twitter = `https://twitter.com/intent/tweet?text=Acertei ${ correct } questões no Quiz | Covid Monsehor - Gil. Disponível no link: link`;
+              var whatsapp = `https://api.whatsapp.com/send?text=Acertei ${ correct } questões no Quiz Covid Monsehor - Gil. Disponível no link link`;
+              var facebook = `https://www.facebook.com/sharer/sharer.php?u=https://carlosdaniel0.github.io/quiz_covidmgil/`;
+              var twitter = `https://twitter.com/intent/tweet?text=Acertei ${ correct } questões no Quiz Covid Monsehor - Gil. Disponível no link link`;
 
               $('#result').html(result);
               
@@ -88,7 +88,7 @@ $.fn.extend({
               } else if (percent >= 70) {
                 optional = 'Muito bom! Você está quase lá, o que acha de tentar novamente para gabaritar e compartilhar com os amigos?'
               } else if (percent > 30 && percent < 70) {
-                optional = 'Está quase lá! Parece que você errou algums questões, mas não desamine. Tente novamente e melhore sua potuação!'
+                optional = 'Está quase lá! Parece que você errou algums questões, mas não desamine. Tente novamente e melhore sua pontuação!'
               } else {
                 optional = 'Que pena! Parece que você acertou menos de 30% do quiz, que tal tentar novamente com os conhecimentos que vocẽ adquiriu?'
               }
@@ -129,6 +129,14 @@ $.fn.extend({
     var index = 0;
     var correct = 0;
     var items = '';
+    var responsaveis = 
+    `
+    <div id="responsaveis">
+      Dados técnicos: </br>
+      <a href="https://coronavirus.saude.gov.br/" class="links">Portal da Saúde - Coronavírus<a> </br>
+      <a href="https://portal.fiocruz.br/coronavirus/perguntas-e-respostas" class="links">Portal FIOCRUZ</a>
+    </div>
+    `;
     indexes = `<li data-target="#carousel" class="active not-visible"></li>`;
       items += 
       `
@@ -140,11 +148,7 @@ $.fn.extend({
               <div class="row d-flex justify-content-center mt-4">
                 <button class="button btn-warning avancar" id="start-button">Iniciar</button>
               </div>
-              <div id="responsaveis">
-                Responsáveis técnicos: </br>
-                Dr. Claudio L. S. Ferrari - CRM: 60113 - SP </br>
-                Dra. Márcia M. da Costa - CRM: 76624 - SP
-              </div>
+              ${ responsaveis }
             </div>
           </div>
       </div>
@@ -197,11 +201,7 @@ $.fn.extend({
                   <i class="fab fa-twitter"></i>
                 </a>
               </row>
-              <div id="responsaveis">
-                Responsáveis técnicos: </br>
-                Dr. Claudio L. S. Ferrari - CRM: 60113 - SP </br>
-                Dra. Márcia M. da Costa - CRM: 76624 - SP
-              </div>
+              ${ responsaveis }
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ $.fn.extend({
     var pattern = 
     `
     <div class="row d-flex justify-content-center">
-      <img id="logo" src="http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" width="200px">
+      <img id="logo" src="img/logo.png" width="200px">
     </div>
     
     <div id="carousel" class="carousel slide" data-touch="false" data-interval="false">
