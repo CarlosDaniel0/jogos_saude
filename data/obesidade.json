@@ -1,0 +1,147 @@
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "title" : " O cuidado na alimentação dos filhos logo no começo da infância, diminue o risco da obesidade da criança?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F613"
+            }
+        },
+        {
+            "id" : 2,
+            "title" : "A educação física da escola da  é o suficiente para seu filho se exercitar o quanto ele precisa?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 1,
+                "note" : "Comentário... &#x1F637"
+            }
+        },
+        {
+            "id" : 3,
+            "title" : "Tratamento para obesidade com medicação funciona?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F468"
+            }
+        },
+        {
+            "id" : 4,
+            "title" : "A ferramenta mais utilizada para identificar a obesidade é o índice de massa corporal (IMC)?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F62C"
+            }
+        },
+        {
+            "id" : 5,
+            "title" : "Além dos problemas cardiovasculares a obesidade também pode desenvolver problemas articulares no indivíduo?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F62C"
+            }
+        },
+        {
+            "id" : 6,
+            "title" : "O excesso de gordura corporal  de maneira geral, é  um problema grave?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário. &#x1F912"
+            }
+        },
+        {
+            "id" : 7,
+            "title" : "A obesidade pode mexer com fatores psicológicos acarretando diminuição da autoestima e depressão?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F91D &#x1F6BF"
+            }
+        },
+        {
+            "id" : 8,
+            "title" : "As consequências mais conhecidas da obesidade são doenças crônicas, como diabetes, hipertensão e problemas cardiovasculares?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário... &#x1F489"
+            }
+        },
+        {
+            "id" : 9,
+            "title" : "A obesidade infantil pode ser algum resultado de um problema de saúde?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário. &#x1F436 &#x1F408"
+            }
+        },
+        {
+            "id" : 10,
+            "title" : "O peso da mãe na gravidez tem alguma ligação com a obesidade infantil?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Comentário. &#x1F613"
+            }
+        }
+    ],
+    "layout": {
+        "img" : "logo-obesidade.png",
+        "bg-img" : "bg-obesidade3.jpg",
+        "title" : "Quiz Obesidade | Monsenhor Gil - PI",
+        "text" : "Teste seus conhecimentos sobre a obesidade",
+        "subtitle" : "Responda a 10 afirmações sobre essa doença descubra o quanto você sabe ela!",
+        "color" : "btn-success",
+        "text-colors" : [
+            "#fff",
+            "#fff",
+            "white"
+        ],
+        "responsaveis" : 
+            {   "title" : [
+                    "Saúde Brasil",
+                    "Hábitos sobre obesidade infantil"
+                ],
+                "links" : [
+                    "https://saudebrasil.saude.gov.br/ter-peso-saudavel/rotina-saudavel-conheca-algumas-estrategias-para-cuidar-do-peso-durante-a-pandemia",
+                    "https://www.minhavida.com.br/familia/testes/17512-voce-conhece-os-habitos-que-influenciam-na-obesidade-infantil"
+                ]
+            }
+    }
+}

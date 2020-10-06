@@ -2,8 +2,7 @@
     "questions" : [
         {
             "id" : 1,
-            "title" : "Pessoas Fumantes correm maior risco de infecção pelo novo coronavírus? ",
-            "img" : "imagem.png",
+            "title" : "Pessoas Fumantes correm maior risco de infecção pelo novo coronavírus?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -16,7 +15,6 @@
         {
             "id" : 2,
             "title" : "Durante a quarentena quem está com sintomas da Covid-19 deve se manter em isolamento?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -29,7 +27,6 @@
         {
             "id" : 3,
             "title" : "Pessoas que usam medicação para doenças pré-existentes devem interromper ou modificar seus tratamentos?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -42,7 +39,6 @@
         {
             "id" : 4,
             "title" : "A pessoa pode transmitir o coronavírus mesmo sem apresentar nenhum tipo de sintomas?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -55,7 +51,6 @@
         {
             "id" : 5,
             "title" : "Pessoas com tuberculose estão no grupo de risco?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -68,7 +63,6 @@
         {
             "id" : 6,
             "title" : "Após 14 dias do início dos sintomas os pacientes já não transmitem mais a doença caso não haja febre?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -81,7 +75,6 @@
         {
             "id" : 7,
             "title" : "Lavar as mãos com pouco sabão elimina o vírus?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -94,7 +87,6 @@
         {
             "id" : 8,
             "title" : "A vacina trivalente da gripe protege contra o COVID-19?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -107,7 +99,6 @@
         {
             "id" : 9,
             "title" : "Humanos podem ser contaminados por fonte animal?",
-            "img" : "imagem.png",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -116,6 +107,41 @@
                 "feedback" : 1,
                 "note" : "embora tenha haja um caso de contaminação por um cachorro em hong kong ,até o momento não há evidências de que cachorro,gato ou qualquer outro animal de estimação possa transmitir a covid-19. &#x1F436 &#x1F408"
             }
+        },
+        {
+            "id" : 10,
+            "title" : "É possível contrair o vírus da Covid-19 mesmo tomando os devidos cuidados, utilizando máscara e fazendoa a higienação com alcóol em gel?",
+            "awnsers" : [
+                "Verdadeiro",
+                "Falso"
+            ],
+            "correct" : {
+                "feedback" : 0,
+                "note" : "Mesmo tomando os devidos cuidados ainda há risco de contaminação. &#x1F613"
+            }
         }
-    ]
+    ],
+    "layout": {
+        "img" : "logo.png",
+        "bg-img" : "bg-covid.jpg",
+        "title" : "Quiz Covid | Monsenhor Gil - PI",
+        "text" : "E se as chances de contrair o novo coronavírus forem proporcionais ao seu conhecimento sobre ele?",
+        "subtitle" : "Responda a 10 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!",
+        "color" : "btn-warning",
+        "text-colors" : [
+            "#ffd902",
+            "#fff",
+            "#fff"
+        ],
+        "responsaveis" : 
+            {   "title" : [
+                    "Portal da Saúde - Coronavírus",
+                    "Portal FIOCRUZ"
+                ],
+                "links" : [
+                    "https://coronavirus.saude.gov.br/",
+                    "https://portal.fiocruz.br/coronavirus/perguntas-e-respostas"
+                ]
+            }
+    }
 }

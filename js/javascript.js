@@ -1,7 +1,56 @@
 // Função que gerencia o quiz
 $.fn.extend({
     quiz: function(json) {
+      // Recebe os paramentros de questões e layout utilziado na página
+      var questions = json['questions']
+      var layout = json['layout'];
+
+      // Define o Estilo do background da página
+      $('body').css({
+       backgroundImage:`url('../img/${ layout['bg-img'] }')`,
+       backgroundRepeat: "no-repeat",
+       backgroundSize: "cover",
+       backgroundPosition: "center",
+       minHeight: "100vh"});
+      
+      
+
+      // Atribui o título correspondente
+      $('title').html(layout['title']);
+
       $(function() {
+        $('h1').css({
+          color: layout['text-colors'][0],
+          textAlign: "center",
+          fontWeight: "700",
+          textShadow: "rgba(0,0,0,0.5) 2px 3px 2px"
+        });
+
+        $('h3').css({
+          color: layout['text-colors'][1],
+          textAlign: "center",
+          textShadow: "rgba(0,0,0,0.5) 2px 3px 2px"
+        });
+
+        $('.responsaveis').css({
+          position: "relative",
+          top: "25px",
+          color: layout['text-colors'][2],
+          textAlign: "center",
+          fontSize: "0.8rem"
+        });
+
+        $('#optional').css({
+          color: layout['text-colors'][2],
+          textShadow: "rgba(0,0,0,0.5) 2px 3px 2px"
+        });
+
+        $('.links').css({
+          fontWeight: "bold",
+          cursor: "pointer",
+          color: layout['text-colors'][2]
+        });
+
         // Animações 
         $('#logo').hide();
         $('#logo').animate({height: 'toggle', opacity: '1'}, 200); 
@@ -15,8 +64,8 @@ $.fn.extend({
         $('#start-button').animate({left: '-=400', opacity: '0'}, 0).delay(2000);
         $('#start-button').animate({left: '+=400', opacity: '1'}, 700);
         
-        $('#responsaveis').hide().delay(3000);
-        $('#responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow');
+        $('.responsaveis').hide().delay(3000);
+        $('.responsaveis').animate({height: 'toggle', opacity: '1'}, 'slow');
 
 
         // Inicia o Quiz
@@ -28,12 +77,12 @@ $.fn.extend({
         
         //Controle de slides;
         $('.select').on('click', function() {
-            if (index <= json.length) {
-              if (index == json.length) $('.carousel-indicators').hide();
+            if (index <= questions.length) {
+              if (index == questions.length) $('.carousel-indicators').hide();
 
             modal = ''
             // Faz a verificação das respostas
-            if ($(this).val() == json[index-1]['correct']['feedback']) {
+            if ($(this).val() == questions[index-1]['correct']['feedback']) {
               // Incrementa em caso de acerto
               correct++;
               modal = 
@@ -46,7 +95,7 @@ $.fn.extend({
                   <h2 class="title anwser">Correto!</h2>
                 </div>
               
-                ${ json[index-1]['correct']['note'] }
+                ${ questions[index-1]['correct']['note'] }
               </div>
               `;
             } else {
@@ -60,20 +109,20 @@ $.fn.extend({
                   <h2 class="title anwser">Ops!</h2>
                 </div>
                 <div class="row d-flex justify-content-center mb-3">
-                  A resposta correta é ${ json[index - 1]['awnsers'][json[index - 1]['correct']['feedback']]}
+                  A resposta correta é ${ questions[index - 1]['awnsers'][questions[index - 1]['correct']['feedback']]}
                 </div>
               
-                ${ json[index-1]['correct']['note'] }
+                ${ questions[index-1]['correct']['note'] }
               </div>
               `;
               
             }
-            if (index >= json.length) {
-              var percent = (correct / json.length) * 100; 
+            if (index >= questions.length) {
+              var percent = (correct / questions.length) * 100; 
               var optional = '';
               var result = 
               `
-              Você acertou ${ correct } de ${ json.length } (${ percent}%) das questões. 
+              Você acertou ${ correct } de ${ questions.length } (${ percent % 10 != 0 ? percent.toFixed(2) : percent }%) das questões. 
               `;
 
               var whatsapp = `https://api.whatsapp.com/send?text=Acertei ${ correct } questões no Quiz Covid Monsehor - Gil. Disponível no link link`;
@@ -83,7 +132,7 @@ $.fn.extend({
               $('#result').html(result);
               
               if (percent == 100) {
-                optional = 'Parabéns você está <i>expert<i> no assunto. Já que você acertou todas as perguntas que tal compartilhar com seus amigos e desafiá-los';
+                optional = 'Parabéns você está <i>expert</i> no assunto. Já que você acertou todas as perguntas que tal compartilhar com seus amigos e desafiá-los';
                 
               } else if (percent >= 70) {
                 optional = 'Muito bom! Você está quase lá, o que acha de tentar novamente para gabaritar e compartilhar com os amigos?'
@@ -125,42 +174,46 @@ $.fn.extend({
         });
     });
     
-    var dados = json;
     var index = 0;
     var correct = 0;
     var items = '';
+    // Links de responsáveis 
+    var i_responsaveis = ''
+    for (var i = 0; i < layout['responsaveis']['title'].length; i++) {
+      i_responsaveis += `<a href="${ layout['responsaveis']['links'][i] }" class="links">${ layout['responsaveis']['title'][i] }</a> </br>`
+    }
+
     var responsaveis = 
     `
-    <div id="responsaveis">
+    <div class="responsaveis">
       Dados técnicos: </br>
-      <a href="https://coronavirus.saude.gov.br/" class="links">Portal da Saúde - Coronavírus<a> </br>
-      <a href="https://portal.fiocruz.br/coronavirus/perguntas-e-respostas" class="links">Portal FIOCRUZ</a>
+        ${ i_responsaveis }
     </div>
     `;
-    indexes = `<li data-target="#carousel" class="active not-visible"></li>`;
+    indexes = `<li data-target="#carousel" class=" not-visible active"></li>`;
       items += 
       `
       <div class="carousel-item active">
           <div class="item">
             <div class="col">
-              <h2 id="info">E se as chances de contrair o novo coronavírus forem proporcionais ao seu conhecimento sobre ele?</h2>
-              <h3 id="subinfo">Responda a 10 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!</h3>
+              <h1 id="info">${ layout['text'] }</h1>
+              <h3 id="subinfo">${ layout['subtitle'] }</h3>
               <div class="row d-flex justify-content-center mt-4">
-                <button class="button btn-warning avancar" id="start-button">Iniciar</button>
+                <button class="button ${ layout['color'] } avancar" id="start-button">Iniciar</button>
               </div>
               ${ responsaveis }
             </div>
           </div>
       </div>
       `;
-    for (var i in json) {                
-            indexes += `<li data-target="#carousel"></li>`;
+    for (var i in questions) {                
+            indexes += `<li data-target="#carousel" data-id="${ i } class="item-inner"></li>`;
             items += 
             `
             <div class="carousel-item">
                 <div class="item">
                   <div class="col">
-                    <h2 class="title">${ dados[i]['title']}</h2>
+                    <h1 class="title">${ questions[i]['title']}</h1>
                     <div class="row d-flex justify-content-center mt-4 options">
                       <button class="button true mr-4 select" value="0">Verdadeiro</button>
                       <button class="button false select" value="1">Falso</button>
@@ -179,7 +232,7 @@ $.fn.extend({
           <div class="item">
             <div class="col">
               <div class="row d-flex justify-content-center">
-                <h2 id="result" class="mt-4"></h2>
+                <h1 id="result" class="mt-4"></h1>
               </div>
               <div class="row">
                 <h3 id="result d-flex justify-content-center"></h3>
@@ -188,7 +241,7 @@ $.fn.extend({
                 <span id="optional"></span>
               </div>
               <div class="d-flex justify-content-center">
-                <b style="color: #fff">Desafie seus amigos: </b>
+                <b style="color: ${ layout['text-colors'][2] }">Desafie seus amigos: </b>
               </div>
               <row class="d-flex justify-content-center mt-2">
                 <a id="facebook" class="network mr-2 d-flex justify-content-center">
@@ -207,11 +260,10 @@ $.fn.extend({
         </div>
       `;
 
-
     var pattern = 
     `
     <div class="row d-flex justify-content-center">
-      <img id="logo" src="img/logo.png" width="200px">
+      <img id="logo" src="../img/${ layout['img'] }" width="200px">
     </div>
     
     <div id="carousel" class="carousel slide" data-touch="false" data-interval="false">
@@ -224,7 +276,7 @@ $.fn.extend({
       </div>
     </div>
     <!-- End Caroussel -->
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -244,14 +296,36 @@ $.fn.extend({
       </div>
     `;
 
-    $(this).html(pattern);
-        
+      $(this).html(pattern);        
     },
 });
 
-$.getJSON("data/covid.json", function(response) {
+var quiz = location.search.slice(1).split("&");
+var cases = ['covid', 'obesidade', 'teste'];
+var existe = 0;
+
+quiz.forEach(function(data) {
+  if (quiz == '') {
+    window.location.assign('/');
+  } else {
+    for (var i in cases) {
+      if (data == cases[i]) {
+        existe++
+      } 
+    }
+  }
+  
+  if (existe != 0) {
+    quiz = data
+  } else {
+    window.location.assign('/');
+  }
+});
+
+ 
+$.getJSON(`../data/${quiz}.json`, function(response) {
   $(function() {
-    $('.container-fluid').quiz(response['questions']);
+    $('.container-fluid').quiz(response);
   });
 })
 
