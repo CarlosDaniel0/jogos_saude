@@ -1,7 +1,5 @@
 # Quiz - Covid 19
 
-<img src="https://i.imgur.com/AsjQFyQ.png" height="400px">
-
 Esse quiz é resultado do projeto de estágio do curso técnico de informática (Pronatec | SEDUC - PI)
 
 ### Referências técnicos disponíveis em:
