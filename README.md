@@ -11,8 +11,10 @@ https://portal.fiocruz.br/coronavirus/perguntas-e-respostas)
 
 ### Contribuiram com as questões
 
+- Maria Beatriz
 - Marcus Felipe
 - Karine
 - Larissa
 - Rairan
+- Rafael
 - Vanessa
