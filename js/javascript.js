@@ -306,7 +306,7 @@ var existe = 0;
 
 quiz.forEach(function(data) {
   if (quiz == '') {
-    window.location.assign('/');
+    window.location.assign('/jogos_saude/');
   } else {
     for (var i in cases) {
       if (data == cases[i]) {
@@ -318,7 +318,7 @@ quiz.forEach(function(data) {
   if (existe != 0) {
     quiz = data
   } else {
-    window.location.assign('/');
+    window.location.assign('/jogos_saude/');
   }
 });
 
