@@ -9,12 +9,12 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "O fumo além de prejudicial ao pulmão pode agravar a situação de risco de contaminação &#x1F613"
+                "note" : "O fumo, além de prejudicial ao pulmão, pode agravar a situação de risco de contaminação &#x1F613"
             }
         },
         {
             "id" : 2,
-            "title" : "Durante a quarentena quem está com sintomas da Covid-19 deve se manter em isolamento?",
+            "title" : "Durante a quarentena, quem está com sintomas da Covid-19 deve se manter em isolamento?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -45,7 +45,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "A contaminação por pessoas assintomaticas é muito comum por causa do relaxamento da medidas de segurança. &#x1F62C"
+                "note" : "A contaminação por pessoas assintomaticas é muito comum por causa do relaxamento nas medidas de segurança. &#x1F62C"
             }
         },
         {
@@ -98,14 +98,14 @@
         },
         {
             "id" : 9,
-            "title" : "Humanos podem ser contaminados por fonte animal?",
+            "title" : "Na propagação do novo coronavírus, humanos podem ser contaminados por fonte animal?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
             ],
             "correct" : {
                 "feedback" : 1,
-                "note" : "embora tenha haja um caso de contaminação por um cachorro em hong kong ,até o momento não há evidências de que cachorro,gato ou qualquer outro animal de estimação possa transmitir a covid-19. &#x1F436 &#x1F408"
+                "note" : "Embora tenha haja um caso de contaminação por um cachorro em Hong kong ,até o momento não há evidências de que cachorro,gato ou qualquer outro animal de estimação possa transmitir a covid-19. &#x1F436 &#x1F408"
             }
         },
         {
@@ -125,8 +125,8 @@
         "img" : "logo-covid.png",
         "bg-img" : "bg-covid.jpg",
         "title" : "Quiz Covid",
-        "text" : "E se as chances de contrair o novo coronavírus forem proporcionais ao seu conhecimento sobre ele?",
-        "subtitle" : "Responda a 10 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!",
+        "text" : "No combate ao novocoronavírus sabia que quanto mais bem informado, mais protegido você estará?",
+        "subtitle" : "Responda a 10 perguntas sobre a COVID-19 e descubra o quão seguro você está.",
         "color" : "btn-warning",
         "text-colors" : [
             "#ffd902",

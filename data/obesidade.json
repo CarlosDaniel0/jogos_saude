@@ -14,7 +14,7 @@
         },
         {
             "id" : 2,
-            "title" : "A educação física da escola é suficiente para seu filho se exercitar o quanto ele precisa?",
+            "title" : "A educação física escolar é suficiente para seu filho se exercitar o quanto ele precisa?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -33,7 +33,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Com o acompanhamento médico devido em conjunto com uma rotina saudável. O uso de medicamentos que saceiam a fome podem contribuir com a perca de peso. &#x1F609 &#x1F468"
+                "note" : "Com o acompanhamento médico em conjunto com uma rotina saudável. O uso de medicamentos que saceiam a fome podem contribuir com a perca de peso. &#x1F609 &#x1F468"
             }
         },
         {
@@ -110,7 +110,7 @@
         },
         {
             "id" : 10,
-            "title" : "O peso da mãe na gravidez tem alguma ligação com a obesidade infantil?",
+            "title" : "Durante a gravidez, o peso da mãe tem alguma ligação com a obesidade infantil?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
@@ -126,7 +126,7 @@
         "bg-img" : "bg-obesidade.jpg",
         "title" : "Quiz Obesidade",
         "text" : "Teste seus conhecimentos sobre a obesidade",
-        "subtitle" : "Responda a 10 afirmações sobre essa doença e descubra o quanto você sabe ela!",
+        "subtitle" : "Responda a 10 questões sobre esse tema e descubra o quanto você sabe sobre os possíveis riscos!",
         "color" : "btn-success",
         "text-colors" : [
             "#fff",
