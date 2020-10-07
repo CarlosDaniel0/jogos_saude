@@ -124,7 +124,7 @@
     "layout": {
         "img" : "logo-covid.png",
         "bg-img" : "bg-covid.jpg",
-        "title" : "Quiz Covid | Monsenhor Gil - PI",
+        "title" : "Quiz Covid",
         "text" : "E se as chances de contrair o novo coronavírus forem proporcionais ao seu conhecimento sobre ele?",
         "subtitle" : "Responda a 10 afirmações sobre a COVID-19 e descubra neste game quão seguro você está!",
         "color" : "btn-warning",

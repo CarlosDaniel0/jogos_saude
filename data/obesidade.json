@@ -2,26 +2,26 @@
     "questions" : [
         {
             "id" : 1,
-            "title" : " O cuidado na alimentação dos filhos logo no começo da infância, diminue o risco da obesidade da criança?",
+            "title" : "O cuidado na alimentação dos filhos logo no começo da infância, diminue o risco da obesidade da criança?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F613"
+                "note" : "Independente da fase da vida, os cuidados com a saúde precisam ser constantes. Isso inclui a alimentação, a prática de atividade física, o controle do ganho de peso e a manutenção de tantos outros hábitos saudáveis. &#x1F3CB &#x1F6B4 &#x1F34E"
             }
         },
         {
             "id" : 2,
-            "title" : "A educação física da escola da  é o suficiente para seu filho se exercitar o quanto ele precisa?",
+            "title" : "A educação física da escola é suficiente para seu filho se exercitar o quanto ele precisa?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
             ],
             "correct" : {
                 "feedback" : 1,
-                "note" : "Comentário... &#x1F637"
+                "note" : "Levando em consideração os aspectos ambientais e comportamentais, é inevitável não pensar em como as crianças de hoje em dia estão deixando de lado as brincadeiras para passar mais tempo em frente às telas. &#x1F937 &#x1F4F1"
             }
         },
         {
@@ -33,19 +33,19 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F468"
+                "note" : "Com o acompanhamento médico devido em conjunto com uma rotina saudável. O uso de medicamentos que saceiam a fome podem contribuir com a perca de peso. &#x1F609 &#x1F468"
             }
         },
         {
             "id" : 4,
-            "title" : "A ferramenta mais utilizada para identificar a obesidade é o índice de massa corporal (IMC)?",
+            "title" : "A ferramenta mais utilizada para identificar a obesidade infantil é o índice de massa corporal (IMC)?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F62C"
+                "note" : "O diagnóstico de obesidade na infância depende das medidas de peso, altura, data de nascimento e sexo. &#x1F642"
             }
         },
         {
@@ -57,19 +57,19 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F62C"
+                "note" : "A falta de exercícios físicos combinado com uma má alimentação contribue para o desenvolvimento de problemas articulares graças ao enfraquecimentos da musculatura corporal. &#x1F614 &#x1F9B4"
             }
         },
         {
             "id" : 6,
-            "title" : "O excesso de gordura corporal  de maneira geral, é  um problema grave?",
+            "title" : "Uma das principais causas de obesidade é a alimentação inadequada ou excessiva?",
             "awnsers" : [
                 "Verdadeiro",
                 "Falso"
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário. &#x1F912"
+                "note" : "Muita gente se engana ao pensar que a obesidade acontece apenas por conta de um fator genético, muitas vezes estamos tocando também em dois temas importantes: alimentação e prática de atividade física. &#x1F34E &#x1F3CB"
             }
         },
         {
@@ -81,7 +81,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F91D &#x1F6BF"
+                "note" : "O indivíduo obeso tem mais propensão a desenvolver problemas como hipertensão, doenças cardiovasculares, diabetes tipo 2, além de problemas físicos. &#x1F614"
             }
         },
         {
@@ -93,7 +93,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário... &#x1F489"
+                "note" : "Consumo desenfreado de açúcar e sal nos alimentos ultraprocessados acarreta em problemas de entupimento de veias e a queda na produção de insulina. &#x1F928 &#x1F354 &#x1F355 &#x1F964"
             }
         },
         {
@@ -105,7 +105,7 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário. &#x1F436 &#x1F408"
+                "note" : "A obesidade está relacionada a diversas doenças crônicas, como diabetes, hipertensão, doenças cardíacas e má formação do esqueleto. &#x1F915"
             }
         },
         {
@@ -117,16 +117,16 @@
             ],
             "correct" : {
                 "feedback" : 0,
-                "note" : "Comentário. &#x1F613"
+                "note" : "Existem evidências que estabelecem um relacionamento entre o ganho de peso excessivo da mãe, durante a gravidez, e maior peso da criança no nascimento. &#x1F930 &#x1F47C"
             }
         }
     ],
     "layout": {
         "img" : "logo-obesidade.png",
         "bg-img" : "bg-obesidade.jpg",
-        "title" : "Quiz Obesidade | Monsenhor Gil - PI",
+        "title" : "Quiz Obesidade",
         "text" : "Teste seus conhecimentos sobre a obesidade",
-        "subtitle" : "Responda a 10 afirmações sobre essa doença descubra o quanto você sabe ela!",
+        "subtitle" : "Responda a 10 afirmações sobre essa doença e descubra o quanto você sabe ela!",
         "color" : "btn-success",
         "text-colors" : [
             "#fff",

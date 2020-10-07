@@ -125,9 +125,9 @@ $.fn.extend({
               Você acertou ${ correct } de ${ questions.length } (${ percent % 10 != 0 ? percent.toFixed(2) : percent }%) das questões. 
               `;
 
-              var whatsapp = `https://api.whatsapp.com/send?text=Acertei ${ correct } questões no Quiz Covid Monsehor - Gil. Disponível no link link`;
-              var facebook = `https://www.facebook.com/sharer/sharer.php?u=https://carlosdaniel0.github.io/quiz_covidmgil/`;
-              var twitter = `https://twitter.com/intent/tweet?text=Acertei ${ correct } questões no Quiz Covid Monsehor - Gil. Disponível no link link`;
+              var whatsapp = `https://api.whatsapp.com/send?text=Acertei ${ correct } questões no ${ layout['title'] } Monsenhor - Gil. Disponível no link https://bit.ly/3jDrlFU`;
+              var facebook = `https://www.facebook.com/sharer/sharer.php?u=https://carlosdaniel0.github.io/jogos_saude/`;
+              var twitter = `https://twitter.com/intent/tweet?text=Acertei ${ correct } questões no ${ layout['title'] } Monsenhor - Gil. Disponível no link https://bit.ly/3jDrlFU`;
 
               $('#result').html(result);
               
@@ -244,13 +244,13 @@ $.fn.extend({
                 <b style="color: ${ layout['text-colors'][2] }">Desafie seus amigos: </b>
               </div>
               <row class="d-flex justify-content-center mt-2">
-                <a id="facebook" class="network mr-2 d-flex justify-content-center">
+                <a id="facebook" class="network mr-2 d-flex justify-content-center" target="_blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-                <a id="whatsapp" class="network mr-2 d-flex justify-content-center">
+                <a id="whatsapp" class="network mr-2 d-flex justify-content-center" target="_blank">
                   <i class="fab fa-whatsapp"></i>
                 </a>
-                <a id="twitter" class="network d-flex justify-content-center">
+                <a id="twitter" class="network d-flex justify-content-center" target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
               </row>
