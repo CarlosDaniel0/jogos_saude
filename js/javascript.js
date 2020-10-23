@@ -180,13 +180,17 @@ $.fn.extend({
     // Links de responsáveis 
     var i_responsaveis = ''
     for (var i = 0; i < layout['responsaveis']['title'].length; i++) {
-      i_responsaveis += `<a href="${ layout['responsaveis']['links'][i] }" class="links">${ layout['responsaveis']['title'][i] }</a> </br>`
+      i_responsaveis += `<a target="_blank" href="${ layout['responsaveis']['links'][i] }" class="links">${ layout['responsaveis']['title'][i] }</a> </br>`
     }
 
     var responsaveis = 
     `
     <div class="responsaveis">
-      Dados técnicos: </br>
+    Atividade: </br>
+    Alunos do curso Técnico em Informática pelo PRONATEC/SEDUC-PI</br>
+    Turma Monsenhor Gil - PI
+    </br></br>
+      Fonte das informações: </br>
         ${ i_responsaveis }
     </div>
     `;
